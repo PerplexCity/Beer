@@ -3,7 +3,7 @@ library(ggplot2)
 library(grid)
 library(gridExtra)
 
-beer <- read.csv("~/Dropbox/Blog Reboot/Beer & Brooklyn/Data/Beer_Raw_Ratings.csv")
+beer <- read.csv("YOUR/PATH/TO/Beer_Raw_Ratings.csv")
 beer$Date <- as.Date(beer$Date, format = "%m/%d/%y")
 
 bbi <- element_text(face="bold.italic", color="black")
