@@ -18,11 +18,11 @@ row.names(table_mean)<-c()
 names(table_mean)<-c("Beer", "Conventional Mean")
 grid.table(table_mean)
 
-tabl_mean_Bayes<- Mean_Bayes[Mean_Bayes$mean>3.76,]
-tabl_mean_Bayes <- tabl_mean_Bayes[order(-tabl_mean_Bayes$mean),]
-row.names(tabl_mean_Bayes)<-c()
-names(tabl_mean_Bayes)<-c("Beer", "Bayesian Average")
-grid.table(tabl_mean_Bayes)
+table_mean_Bayes<- Mean_Bayes[Mean_Bayes$mean>3.76,]
+table_mean_Bayes <- table_mean_Bayes[order(-table_mean_Bayes$mean),]
+row.names(table_mean_Bayes)<-c()
+names(table_mean_Bayes)<-c("Beer", "Bayesian Average")
+grid.table(table_mean_Bayes)
 
 black <- subset(beer, Beer=="Brooklyn Black Ops")
 black_decile_means <- rep(0, 10)
